@@ -1,6 +1,7 @@
 const express = require('express');
-const productRoutes = require('./routes/product.routes');
+
 const connectDb = require('./config/mongodb');
+const productRoutes = require('./routes/Product.routes');
 
 connectDb();
 

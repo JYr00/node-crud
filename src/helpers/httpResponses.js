@@ -1,13 +1,10 @@
 exports.status200 = (res, data) => {
-    res.status(200).json({
-        status: 'success',
-        data: data,
-    });
+    res.status(200).json(data);
 };
 
 exports.status201 = (res, data) => {
     res.status(201).json({
-        status: 'success',
+        status: 'created',
         data: data,
     });
 };
