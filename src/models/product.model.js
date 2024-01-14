@@ -6,7 +6,7 @@ const ProductSchema = new mongoose.Schema({
   size: { type: String, enum: ['S', 'M', 'L']},
   unitSize : { type: Number},
   description: String,
-  category: String
+  category: { type: String, default: 'No asignado' }
 });
 
 ProductSchema.method('toJSON', function () {
